@@ -9,13 +9,20 @@
 .App {
   text-align: center;
 }
-
-.alignCenter {
-  /* justify-content: center;
-  display: block; */
-  margin: 0 auto;
+.searchBox {
+  margin-top: 1em;
 }
 
+.alignCenter {
+  /* justify-content: center; */
+  /* display: block; 
+  margin: 0 auto; */
+}
+
+input  {
+  display:block;
+  margin:0 auto;
+}
 
 
 
