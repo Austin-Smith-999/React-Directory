@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 // import mainPageContainer from "./components/mainpageContainer";
 import NavBar from "./components/NavBar";
-import tablesOfPeopleContainer from './components/tablesOfPeopleContainer';
+import TablesOfPeopleContainer from './components/TablesOfPeopleContainer';
 
 function App() {
   return ( 
     <div>
-  <NavBar />
-  <tablesOfPeopleContainer />
+  {/* <NavBar /> */}
+  <TablesOfPeopleContainer />
   </div>
 
           );

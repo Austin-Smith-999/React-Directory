@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import '../App.css';
-import NavBar from "./NavBar";
+// import NavBar from "./NavBar";
 import Col from "./column";
 import API from "../utils/API";
 import Row from "./Row";
 import Card from "./card";
 import Container from "./Container";
 
-class tablesOfPeopleContainer extends Component {
-    state = {
-		search: "",
+class TablesOfPeopleContainer extends Component {
+	state = {
 		results: [],
-    };
+		search: "",
+	};
   
     // handlePageChange = page => {
     //   this.setState({ currentPage: page });
@@ -28,6 +28,32 @@ class tablesOfPeopleContainer extends Component {
         .catch((err) => console.log(err));
     };
   
+
+    handleSort = () => {
+      console.log('testing handleSort function');
+    };
+  
+    handleInputChange = (event) => {
+      // Getting the value and name of the input which triggered the change
+      const value = event.target.value;
+      const name = event.target.name;
+  
+      // update the state of the password to the rendered change
+      // const pass = event.target.password;
+  
+      // Updating the input's state
+      this.setState({
+        [name]: value,
+      });
+    };
+  
+    handleFormSubmit = (event) => {
+      // Preventing the default behavior of the form submit (which is to refresh the page)
+      event.preventDefault();
+      this.searchEmployees(this.state.search);
+    };
+
+
 
     render() {
       //
@@ -97,4 +123,4 @@ class tablesOfPeopleContainer extends Component {
     }
   }
   
-  export default tablesOfPeopleContainer;
+  export default TablesOfPeopleContainer;
