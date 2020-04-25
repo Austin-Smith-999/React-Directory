@@ -11,8 +11,8 @@ function NavBar(props) {
         
         {/* <input className="alignCenter" type="search" placeholder="Search" aria-label="Search"></input>
          */}
-         <input className="searchBox" type="search" placeholder="Search"/>
-        
+         <input className="searchBox" type="search" placeholder="Search" onChange={props.handleChange}/>
+        <button onClick={props.sortAlphabetically}>Sort by Name</button>
         </div>
 
 

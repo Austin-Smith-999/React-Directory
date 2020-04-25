@@ -10,14 +10,31 @@ import Container from "./Container";
 
 // console.log(API);
 class TablesOfPeopleContainer extends Component {
-  constructor(props)
-  {
+  constructor(props) {
     super(props)
     this.state = {
       result: [],
-      // search: "",
+      filterArray: [],
+      reverse: false
     }
   }
+
+  handleChange = (event) => {
+    console.log(event.target.value);
+    console.log(this.state);
+
+    this.setState({filterArray: this.state.result.filter(person => person.name.first.includes(event.target.value) || person.name.last.includes(event.target.value) || person.email.includes(event.target.value))});
+
+
+    //  this.setState({result: this.state.result.filter(name=>name.includes(event.target.value))})
+    
+    // this.setState({value: event.target.value});
+  }
+
+  // handleSubmit(event) {
+  //   alert('An essay was submitted: ' + this.state.value);
+  //   event.preventDefault();
+  // }
 
   headings = [
     {name: "image", width: "10%"},
@@ -41,19 +58,37 @@ class TablesOfPeopleContainer extends Component {
       // this.searchEmployees();
       API.getUsers()
       .then(res => {
-        this.setState({result: res.data.results});
-      });
+        this.setState({result: res.data.results, filterArray: res.data.results});
+      }).then(()=> console.log("this.state", this.state))
+    }
+
+    sortAlphabetically = (reverse) => {
+      console.log("reverse!", reverse);
+    // console.log('clicked')
+        this.setState({filterArray : this.state.filterArray.sort((a, b) => {
+          if (a.name.last < b.name.last ) {
+            return reverse ? 1 : -1;
+          }
+          if (a.name.last > b.name.last ) {
+            return reverse ? -1 : 1 ;
+          }
+          // a must be equal to b
+          return 0;
+        }), 
+        reverse: !reverse 
+      })
     }
 
     render() {
       return(
         <>
         <NavBar 
-        
+          handleChange = {this.handleChange}
+          sortAlphabetically={() => this.sortAlphabetically(this.state.reverse)}
         />
         <Row 
           headings = {this.headings}
-          users = {this.state.result}
+          users = {this.state.filterArray}
         />
         </>
       )
