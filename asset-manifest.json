@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-directory/static/css/main.ef8b50b2.chunk.css",
-    "main.js": "/react-directory/static/js/main.7d050ac1.chunk.js",
-    "main.js.map": "/react-directory/static/js/main.7d050ac1.chunk.js.map",
-    "runtime-main.js": "/react-directory/static/js/runtime-main.a11737cd.js",
-    "runtime-main.js.map": "/react-directory/static/js/runtime-main.a11737cd.js.map",
-    "static/js/2.b1a4ead1.chunk.js": "/react-directory/static/js/2.b1a4ead1.chunk.js",
-    "static/js/2.b1a4ead1.chunk.js.map": "/react-directory/static/js/2.b1a4ead1.chunk.js.map",
-    "index.html": "/react-directory/index.html",
-    "precache-manifest.3307fbd53b9e08153ac9d6bf920c0df7.js": "/react-directory/precache-manifest.3307fbd53b9e08153ac9d6bf920c0df7.js",
-    "service-worker.js": "/react-directory/service-worker.js",
-    "static/css/main.ef8b50b2.chunk.css.map": "/react-directory/static/css/main.ef8b50b2.chunk.css.map",
-    "static/js/2.b1a4ead1.chunk.js.LICENSE.txt": "/react-directory/static/js/2.b1a4ead1.chunk.js.LICENSE.txt"
+    "main.css": "/React-Directory/static/css/main.ef8b50b2.chunk.css",
+    "main.js": "/React-Directory/static/js/main.7f0821c7.chunk.js",
+    "main.js.map": "/React-Directory/static/js/main.7f0821c7.chunk.js.map",
+    "runtime-main.js": "/React-Directory/static/js/runtime-main.939dff10.js",
+    "runtime-main.js.map": "/React-Directory/static/js/runtime-main.939dff10.js.map",
+    "static/js/2.b1a4ead1.chunk.js": "/React-Directory/static/js/2.b1a4ead1.chunk.js",
+    "static/js/2.b1a4ead1.chunk.js.map": "/React-Directory/static/js/2.b1a4ead1.chunk.js.map",
+    "index.html": "/React-Directory/index.html",
+    "precache-manifest.9153acc166a4202bd02ea5603c16f845.js": "/React-Directory/precache-manifest.9153acc166a4202bd02ea5603c16f845.js",
+    "service-worker.js": "/React-Directory/service-worker.js",
+    "static/css/main.ef8b50b2.chunk.css.map": "/React-Directory/static/css/main.ef8b50b2.chunk.css.map",
+    "static/js/2.b1a4ead1.chunk.js.LICENSE.txt": "/React-Directory/static/js/2.b1a4ead1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a11737cd.js",
+    "static/js/runtime-main.939dff10.js",
     "static/js/2.b1a4ead1.chunk.js",
     "static/css/main.ef8b50b2.chunk.css",
-    "static/js/main.7d050ac1.chunk.js"
+    "static/js/main.7f0821c7.chunk.js"
   ]
 }
